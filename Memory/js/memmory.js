@@ -26,7 +26,7 @@ function shuffle(array) {
   shuffle(opencards);
   
 
-console.log(opencards)
+// console.log(opencards)
 
 
 
@@ -36,8 +36,8 @@ console.log(opencards)
 for (let index = 0; index < 16; index++){
    const b = document.querySelector("#front"+index)
    b.innerHTML = opencards[index];
-   b.type = opencards[index]
-   console.log(b.type)
+  //  b.type = opencards[index]
+  //  console.log(b.type)
    //const a = document.querySelector("#flip"+index)
     
    //a.dataset.framework = opencards[index];
@@ -62,17 +62,18 @@ function flipkarte() {
   else{
     geflipt = false;
     zweiteK = this;
-
+   
     // überprüfen ob die karten falsch sind
-  if(ersteK.querySelectorAll(".front") === zweiteK.querySelectorAll(".front")){
-    ersteK.removeEventListner('click', flipkarte)
-    zweiteK.removeEventListener('click', flipkarte)
+  if(ersteK.querySelectorAll(".front")[0].innerHTML == zweiteK.querySelectorAll(".front")[0].innerHTML ){
+    console.log("Hello True");
+    ersteK.querySelectorAll(".front")[0].classList.remove("flip");
+    zweiteK.querySelectorAll(".front")[0].classList.remove("flip");
     }
     
     else{
 
       setTimeout(() => {
-
+        console.log("Hello false");
         ersteK.classList.remove("flip")
         zweiteK.classList.remove("flip")
       },1500)
