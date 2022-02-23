@@ -26,7 +26,7 @@ function shuffle(array) {
   shuffle(opencards);
   
 
-// console.log(opencards)
+console.log(opencards)
 
 
 
@@ -36,11 +36,6 @@ function shuffle(array) {
 for (let index = 0; index < 16; index++){
    const b = document.querySelector("#front"+index)
    b.innerHTML = opencards[index];
-  //  b.type = opencards[index]
-  //  console.log(b.type)
-   //const a = document.querySelector("#flip"+index)
-    
-   //a.dataset.framework = opencards[index];
    
 }
 
