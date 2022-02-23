@@ -71,7 +71,7 @@ function flipkarte() {
         console.log("Hello false");
         ersteK.classList.remove("flip")
         zweiteK.classList.remove("flip")
-      },1500)
+      },800)
       
     }
     
