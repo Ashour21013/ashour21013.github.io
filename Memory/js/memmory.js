@@ -61,8 +61,9 @@ function flipkarte() {
     // überprüfen ob die karten falsch sind
   if(ersteK.querySelectorAll(".front")[0].innerHTML == zweiteK.querySelectorAll(".front")[0].innerHTML ){
     console.log("Hello True");
-    ersteK.querySelectorAll(".front")[0].classList.remove("flip");
-    zweiteK.querySelectorAll(".front")[0].classList.remove("flip");
+    //
+    //ersteK.querySelectorAll(".front")[0].classList.remove("flip");
+    //zweiteK.querySelectorAll(".front")[0].classList.remove("flip");
     }
     
     else{
